@@ -1,0 +1,8 @@
+Automatic Dropdown Updates
+update_dropdowns() function automatically updates the node lists in dropdowns whenever a process or resource is added.
+
+Difference:
+
+Old Code: Required manual entry of nodes in the Entry fields.
+
+New Code: Automatically refreshes dropdowns when a node is added.
