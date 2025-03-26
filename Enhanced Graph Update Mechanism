@@ -1,0 +1,10 @@
+The new version uses ax.clear() before drawing the graph, preventing graph overlap issues.
+ax (subplot) is passed explicitly in nx.draw(), ensuring cleaner rendering.
+
+def update_graph():
+    ax.clear()
+    pos = nx.spring_layout(G)
+    colors = ["blue" if "P" in node else "red" for node in G.nodes]
+    nx.draw(G, pos, with_labels=True, node_color=colors, edge_color="black", node_size=2000, font_size=12, ax=ax)
+    canvas.draw()
+    update_dropdowns()
