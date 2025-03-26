@@ -1,0 +1,14 @@
+Improved Deadlock Detection Mechanism
+Revision:
+
+The new version explicitly handles errors while detecting deadlocks.
+
+It updates the status label dynamically based on the detection result.
+
+
+def detect_deadlock():
+    try:
+        nx.find_cycle(G, orientation='original')
+        status_label.config(text="Deadlock Detected!", fg="red")
+    except nx.NetworkXNoCycle:
+        status_label.config(text="No Deadlock Detected.", fg="green")
