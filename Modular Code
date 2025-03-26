@@ -1,0 +1,9 @@
+Modular Code & Cleaner Structure
+
+Refactored code into separate functions (update_graph(), update_dropdowns(), etc.), making it more modular and readable.
+
+Difference:
+
+Old Code: Functions had mixed responsibilities (e.g., update_graph() also managed UI updates).
+
+New Code: Modular structure improves maintainability.
