@@ -1,0 +1,21 @@
+The new version includes improvements like
+background color 
+padding 
+better UI layout
+Creates a 600x600 window with a turquoise background.
+Adds a frame (frame) with a coral background for UI elements.
+Adds another frame (canvas_frame) to hold a Matplotlib figure.
+Uses FigureCanvasTkAgg to embed a Matplotlib figure in the Tkinter window.
+
+root.geometry("600x600")
+root.configure(bg="#40E0D0")
+
+frame = tk.Frame(root, bg="#FF6F61")
+frame.pack(pady=10)
+
+canvas_frame = tk.Frame(root)
+canvas_frame.pack()
+
+fig, ax = plt.subplots(figsize=(5, 5))
+canvas = FigureCanvasTkAgg(fig, master=canvas_frame)
+canvas.get_tk_widget().pack()
