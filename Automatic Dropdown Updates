@@ -6,3 +6,8 @@ Difference:
 Old Code: Required manual entry of nodes in the Entry fields.
 
 New Code: Automatically refreshes dropdowns when a node is added.
+
+def update_dropdowns():
+    nodes = list(G.nodes)
+    from_menu['values'] = nodes
+    to_menu['values'] = nodes
