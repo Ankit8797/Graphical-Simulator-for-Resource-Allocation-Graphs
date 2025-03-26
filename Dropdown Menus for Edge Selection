@@ -1,0 +1,6 @@
+Dropdown Menus for Edge Selection
+Replaced manual Entry() text fields (from_entry, to_entry) with ttk.Combobox for selecting nodes instead of typing them manually.
+Improved user experience by preventing invalid node selection.
+Difference:
+Old Code: Used text entries, requiring manual input.
+New Code: Uses dropdown menus (ttk.Combobox) for error-free selection.
